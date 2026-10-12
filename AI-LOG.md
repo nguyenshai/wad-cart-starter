@@ -21,3 +21,11 @@ Kept: The overall validation for negative prices/invalid quantities and the VAT,
 Changed: Fixed items.length() to items.length === 0, changed subtotal from const to let, and updated the subtotal loop to properly accumulate item totals.
 Rejected: The incorrect array length syntax and constant subtotal declaration.
 By hand: Wrote the initial implementation, applied the feedback corrections, executed npm test, and verified that all 7 tests passed successfully.
+
+## 2026-10-12 — configure harness linter and GitHub Actions CI
+Tool: AI Collaborator
+Asked for: Guide and provide configuration for the linter script in `package.json` and the GitHub Actions CI workflow file (`.github/workflows/ci.yml`) to complete the harness requirements.
+Kept: The structure of the GitHub Actions CI workflow and the linter configuration.
+Changed: None.
+Rejected: None.
+By hand: Added the linter script to `package.json`, created the `.github/workflows/ci.yml` file, and reviewed the harness setup before testing and pushing.

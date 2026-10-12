@@ -87,3 +87,13 @@ test('The total round down', () =>{
 })
 
 // new testcase for qty = 0
+test('The qty is equal 0', () => {
+  const items = [
+      { name: 'Jean', price: 100000, qty: 0}
+  ]
+  const options = { vatRate: 0.01, freeShipFrom: 500000, shipFee: 30000 }
+  assert.throws(
+    () => cartTotal(items, options),
+    RangeError
+  )
+})
